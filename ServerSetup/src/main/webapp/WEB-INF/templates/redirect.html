@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirect Page</title>
+    <script>
+        // Function to make a POST request
+        function sendPostRequest(url, data) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "x-www-form-urlencoded;charset=UTF-8");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    // Handle response if needed
+                    console.log(xhr.responseText);
+                }
+            };
+            xhr.send(JSON.stringify(data));
+        }
+
+        // Function to redirect to another page after making the POST request
+        function redirectToPage() {
+            // Make the POST request
+            sendPostRequest("http://localhost:8090/fhir/Patient/_search", {_id: "1,2,3"});
+        }
+
+        // Call redirectToPage when the page is loaded
+        window.onload = redirectToPage;
+    </script>
+</head>
+<body>
+<!-- You can include your HTML content here if needed -->
+</body>
+</html>

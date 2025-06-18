@@ -1,0 +1,27 @@
+apiVersion: v2
+name: hapi-fhir-jpaserver
+description: A Helm chart for deploying the HAPI FHIR JPA server starter on Kubernetes.
+type: application
+home: https://github.com/hapifhir/hapi-fhir-jpaserver-starter
+sources:
+  - https://github.com/hapifhir/hapi-fhir-jpaserver-starter
+dependencies:
+  - name: postgresql
+    version: 12.5.6
+    repository: oci://registry-1.docker.io/bitnamicharts
+    condition: postgresql.enabled
+appVersion: 6.8.3
+version: 0.14.0
+annotations:
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/changes: |
+    # When using the list of objects option the valid supported kinds are
+    # added, changed, deprecated, removed, fixed, and security.
+    - kind: added
+      description: updated starter image to 6.8.3
+    - kind: fixed
+      description: incorrect handling of existing secret database config
+    - kind: added
+      description: support for using a non-admin user for the postgres database
+    - kind: added
+      description: ability to create a dedicated ServiceAccount
