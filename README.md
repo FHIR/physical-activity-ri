@@ -1,7 +1,7 @@
 # Physical Activity Reference Implementation (physical-activity-ri)
 
 Welcome to the **Physical Activity Reference Implementation** repository.  
-This project provides a full-stack reference implementation aligned with the [Physical Activity Implementation Guide](#). It includes:
+This project provides a full-stack reference implementation aligned with the [Physical Activity Implementation Guide](https://build.fhir.org/ig/HL7/physical-activity/). It includes:
 
 - **Patient App** for individuals to track and manage their physical activity.
 - **Provider App** for care providers to view, manage, and assign activity-related goals.
