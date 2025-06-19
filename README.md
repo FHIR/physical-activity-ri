@@ -43,6 +43,6 @@ This environment allows both apps to securely interact with the FHIR server in a
 
 ## 📚 Documentation
 
-Documentation for both apps can be found in the [`/documentation`](./documentation) folder.  
+Documentation for both apps can be found in the [`/Documentation`](./Documentation) folder.  
 It includes user guides for setup, navigation, and general use of the Patient and Provider apps.
 
