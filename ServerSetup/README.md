@@ -25,7 +25,7 @@ This project provides a Docker Compose configuration to run **Keycloak** (an ide
 ### 1. Clone or download this repository
 
 ```bash
-git clone https://github.com/behnishmann85/securefhirserver.git
+git clone https://github.com/FHIR/physical-activity-ri.git
 cd setup
 ```
 
